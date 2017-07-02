@@ -1,0 +1,297 @@
+/*
+LESS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: @icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+@icon-home: x y offset_x offset_y width height total_width total_height image_path name;
+
+At the bottom of this section, we provide information about the spritesheet itself
+@spritesheet: width height image @spritesheet-sprites;
+*/
+@24h-name: '24h';
+@24h-x: 335px;
+@24h-y: 0px;
+@24h-offset-x: -335px;
+@24h-offset-y: 0px;
+@24h-width: 50px;
+@24h-height: 50px;
+@24h-total-width: 385px;
+@24h-total-height: 363px;
+@24h-image: '../img/sprite.png';
+@24h: 335px 0px -335px 0px 50px 50px 385px 363px '../img/sprite.png' '24h';
+@-mir-name: 'Mir';
+@-mir-x: 54px;
+@-mir-y: 335px;
+@-mir-offset-x: -54px;
+@-mir-offset-y: -335px;
+@-mir-width: 52px;
+@-mir-height: 28px;
+@-mir-total-width: 385px;
+@-mir-total-height: 363px;
+@-mir-image: '../img/sprite.png';
+@-mir: 54px 335px -54px -335px 52px 28px 385px 363px '../img/sprite.png' 'Mir';
+@-paypal-name: 'Paypal';
+@-paypal-x: 244px;
+@-paypal-y: 307px;
+@-paypal-offset-x: -244px;
+@-paypal-offset-y: -307px;
+@-paypal-width: 70px;
+@-paypal-height: 28px;
+@-paypal-total-width: 385px;
+@-paypal-total-height: 363px;
+@-paypal-image: '../img/sprite.png';
+@-paypal: 244px 307px -244px -307px 70px 28px 385px 363px '../img/sprite.png' 'Paypal';
+@-robot-name: 'Robot';
+@-robot-x: 0px;
+@-robot-y: 0px;
+@-robot-offset-x: 0px;
+@-robot-offset-y: 0px;
+@-robot-width: 257px;
+@-robot-height: 307px;
+@-robot-total-width: 385px;
+@-robot-total-height: 363px;
+@-robot-image: '../img/sprite.png';
+@-robot: 0px 0px 0px 0px 257px 307px 385px 363px '../img/sprite.png' 'Robot';
+@beeline-name: 'beeline';
+@beeline-x: 257px;
+@beeline-y: 278px;
+@beeline-offset-x: -257px;
+@beeline-offset-y: -278px;
+@beeline-width: 74px;
+@beeline-height: 28px;
+@beeline-total-width: 385px;
+@beeline-total-height: 363px;
+@beeline-image: '../img/sprite.png';
+@beeline: 257px 278px -257px -278px 74px 28px 385px 363px '../img/sprite.png' 'beeline';
+@checkbox-name: 'checkbox';
+@checkbox-x: 257px;
+@checkbox-y: 0px;
+@checkbox-offset-x: -257px;
+@checkbox-offset-y: 0px;
+@checkbox-width: 78px;
+@checkbox-height: 78px;
+@checkbox-total-width: 385px;
+@checkbox-total-height: 363px;
+@checkbox-image: '../img/sprite.png';
+@checkbox: 257px 0px -257px 0px 78px 78px 385px 363px '../img/sprite.png' 'checkbox';
+@clients-name: 'clients';
+@clients-x: 257px;
+@clients-y: 128px;
+@clients-offset-x: -257px;
+@clients-offset-y: -128px;
+@clients-width: 50px;
+@clients-height: 50px;
+@clients-total-width: 385px;
+@clients-total-height: 363px;
+@clients-image: '../img/sprite.png';
+@clients: 257px 128px -257px -128px 50px 50px 385px 363px '../img/sprite.png' 'clients';
+@install-name: 'install';
+@install-x: 257px;
+@install-y: 178px;
+@install-offset-x: -257px;
+@install-offset-y: -178px;
+@install-width: 50px;
+@install-height: 50px;
+@install-total-width: 385px;
+@install-total-height: 363px;
+@install-image: '../img/sprite.png';
+@install: 257px 178px -257px -178px 50px 50px 385px 363px '../img/sprite.png' 'install';
+@mastercard-name: 'mastercard';
+@mastercard-x: 335px;
+@mastercard-y: 50px;
+@mastercard-offset-x: -335px;
+@mastercard-offset-y: -50px;
+@mastercard-width: 39px;
+@mastercard-height: 28px;
+@mastercard-total-width: 385px;
+@mastercard-total-height: 363px;
+@mastercard-image: '../img/sprite.png';
+@mastercard: 335px 50px -335px -50px 39px 28px 385px 363px '../img/sprite.png' 'mastercard';
+@megafon-name: 'megafon';
+@megafon-x: 164px;
+@megafon-y: 307px;
+@megafon-offset-x: -164px;
+@megafon-offset-y: -307px;
+@megafon-width: 80px;
+@megafon-height: 28px;
+@megafon-total-width: 385px;
+@megafon-total-height: 363px;
+@megafon-image: '../img/sprite.png';
+@megafon: 164px 307px -164px -307px 80px 28px 385px 363px '../img/sprite.png' 'megafon';
+@mts-name: 'mts';
+@mts-x: 314px;
+@mts-y: 307px;
+@mts-offset-x: -314px;
+@mts-offset-y: -307px;
+@mts-width: 56px;
+@mts-height: 28px;
+@mts-total-width: 385px;
+@mts-total-height: 363px;
+@mts-image: '../img/sprite.png';
+@mts: 314px 307px -314px -307px 56px 28px 385px 363px '../img/sprite.png' 'mts';
+@pay-name: 'pay';
+@pay-x: 257px;
+@pay-y: 78px;
+@pay-offset-x: -257px;
+@pay-offset-y: -78px;
+@pay-width: 50px;
+@pay-height: 50px;
+@pay-total-width: 385px;
+@pay-total-height: 363px;
+@pay-image: '../img/sprite.png';
+@pay: 257px 78px -257px -78px 50px 50px 385px 363px '../img/sprite.png' 'pay';
+@sber-name: 'sber';
+@sber-x: 0px;
+@sber-y: 307px;
+@sber-offset-x: 0px;
+@sber-offset-y: -307px;
+@sber-width: 83px;
+@sber-height: 28px;
+@sber-total-width: 385px;
+@sber-total-height: 363px;
+@sber-image: '../img/sprite.png';
+@sber: 0px 307px 0px -307px 83px 28px 385px 363px '../img/sprite.png' 'sber';
+@shape-menu-name: 'shape-menu';
+@shape-menu-x: 335px;
+@shape-menu-y: 106px;
+@shape-menu-offset-x: -335px;
+@shape-menu-offset-y: -106px;
+@shape-menu-width: 12px;
+@shape-menu-height: 32px;
+@shape-menu-total-width: 385px;
+@shape-menu-total-height: 363px;
+@shape-menu-image: '../img/sprite.png';
+@shape-menu: 335px 106px -335px -106px 12px 32px 385px 363px '../img/sprite.png' 'shape-menu';
+@telephone-name: 'telephone';
+@telephone-x: 347px;
+@telephone-y: 106px;
+@telephone-offset-x: -347px;
+@telephone-offset-y: -106px;
+@telephone-width: 19px;
+@telephone-height: 19px;
+@telephone-total-width: 385px;
+@telephone-total-height: 363px;
+@telephone-image: '../img/sprite.png';
+@telephone: 347px 106px -347px -106px 19px 19px 385px 363px '../img/sprite.png' 'telephone';
+@thumbup-name: 'thumbup';
+@thumbup-x: 257px;
+@thumbup-y: 228px;
+@thumbup-offset-x: -257px;
+@thumbup-offset-y: -228px;
+@thumbup-width: 50px;
+@thumbup-height: 50px;
+@thumbup-total-width: 385px;
+@thumbup-total-height: 363px;
+@thumbup-image: '../img/sprite.png';
+@thumbup: 257px 228px -257px -228px 50px 50px 385px 363px '../img/sprite.png' 'thumbup';
+@visa-name: 'visa';
+@visa-x: 335px;
+@visa-y: 78px;
+@visa-offset-x: -335px;
+@visa-offset-y: -78px;
+@visa-width: 37px;
+@visa-height: 28px;
+@visa-total-width: 385px;
+@visa-total-height: 363px;
+@visa-image: '../img/sprite.png';
+@visa: 335px 78px -335px -78px 37px 28px 385px 363px '../img/sprite.png' 'visa';
+@webm-name: 'webm';
+@webm-x: 83px;
+@webm-y: 307px;
+@webm-offset-x: -83px;
+@webm-offset-y: -307px;
+@webm-width: 81px;
+@webm-height: 28px;
+@webm-total-width: 385px;
+@webm-total-height: 363px;
+@webm-image: '../img/sprite.png';
+@webm: 83px 307px -83px -307px 81px 28px 385px 363px '../img/sprite.png' 'webm';
+@yandex-name: 'yandex';
+@yandex-x: 0px;
+@yandex-y: 335px;
+@yandex-offset-x: 0px;
+@yandex-offset-y: -335px;
+@yandex-width: 54px;
+@yandex-height: 28px;
+@yandex-total-width: 385px;
+@yandex-total-height: 363px;
+@yandex-image: '../img/sprite.png';
+@yandex: 0px 335px 0px -335px 54px 28px 385px 363px '../img/sprite.png' 'yandex';
+@spritesheet-width: 385px;
+@spritesheet-height: 363px;
+@spritesheet-image: '../img/sprite.png';
+@spritesheet-sprites: @24h @-mir @-paypal @-robot @beeline @checkbox @clients @install @mastercard @megafon @mts @pay @sber @shape-menu @telephone @thumbup @visa @webm @yandex;
+@spritesheet: 385px 363px '../img/sprite.png' @spritesheet-sprites;
+
+/*
+The provided classes are intended to be used with the array-like variables
+
+.icon-home {
+  .sprite-width(@icon-home);
+}
+.icon-email {
+  .sprite(@icon-email);
+}
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.sprite-width(@sprite) {
+  width: extract(@sprite, 5);
+}
+
+.sprite-height(@sprite) {
+  height: extract(@sprite, 6);
+}
+
+.sprite-position(@sprite) {
+  @sprite-offset-x: extract(@sprite, 3);
+  @sprite-offset-y: extract(@sprite, 4);
+  background-position: @sprite-offset-x @sprite-offset-y;
+}
+
+.sprite-image(@sprite) {
+  @sprite-image: extract(@sprite, 9);
+  @sprite-image-bare: ~`"@{sprite-image}".slice(1, -1)`;
+  background-image: url(@sprite-image-bare);
+}
+
+.sprite(@sprite) {
+  .sprite-image(@sprite);
+  .sprite-position(@sprite);
+  .sprite-width(@sprite);
+  .sprite-height(@sprite);
+}
+
+/*
+The `.sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of LESS
+
+This must be run when you have at least 2 sprites.
+  If run with a single sprite, then there will be reference errors.
+
+.sprites(@spritesheet-sprites);
+*/
+.sprites(@sprites, @i: 1) when (@i <= length(@sprites)) {
+  @sprite: extract(@sprites, @i);
+  @sprite-name: e(extract(@sprite, 10));
+  .@{sprite-name} {
+    .sprite(@sprite);
+  }
+  .sprites(@sprites, @i + 1);
+}
