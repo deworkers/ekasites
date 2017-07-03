@@ -71,7 +71,7 @@ h2 {
   background: #e0e0e0;
 }
 .btn-know-more {
-
+  border-radius: 4px;
 }
 .main-head {
   min-height: 90px;
@@ -496,24 +496,65 @@ h2 {
   color: #ffffff;
   margin-bottom: 46px;
 }
-.sites-price {
+.sites-price-wrap {
+  width: 300px;
+  display: inline-block;
+  margin-right: 25px;
+}
+.sites-kinds {
   display: inline-block;
   min-height: 300px;
   width: 300px;
   margin-bottom: 14px;
   background: #00bb5e;
   color: #ffffff;
+  vertical-align: top;
 }
-.sites-price:last-child {
-  margin-right: 0px;
-}
-.sites-price-wrap {
-  width: 300px;
-  display: inline-block;
-  margin-right: 25px;
-}
+
 .sites-price-wrap:last-child {
   margin-right: 0px;
+}
+.price-header {
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.card::before {
+  content: "";
+  display: block;
+  margin-top: 39px;
+  margin-right: auto;
+  margin-bottom: 19px;
+  margin-left: auto;
+  .sprite( @buscard);
+  }
+.catalog::before {
+  content: "";
+  display: block;
+  margin-top: 39px;
+  margin-right: auto;
+  margin-bottom: 19px;
+  margin-left: auto;
+  .sprite( @calendar);
+}
+.shop::before {
+  content: "";
+  display: block;
+  margin-top: 39px;
+  margin-right: auto;
+  margin-bottom: 19px;
+  margin-left: auto;
+  .sprite( @laptop);
+  }
+.sites-price {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.sites-descr {
+  width: 150px;
+  margin: 0 auto;
 }
 .interest-block {
   padding: 42px 50px;
@@ -561,29 +602,28 @@ h2 {
 {
   .sprite( @settings);
 }
-.interest_item:nth-child(2)::before
-{
-  .sprite( @paint);
-}
-.interest_item:nth-child(3)::before
-{
   .sprite( @server);
 }
-.interest_item:nth-child(4)::before
+.interest_item:nth-child(2)::before
 {
   .sprite( @rocket);
 }
-.interest_item:nth-child(5)::before
+.interest_item:nth-child(3)::before
+{
+  .sprite( @paint);
+}
+.interest_item:nth-child(4)::before
 {
   .sprite( @table);
 }
+.interest_item:nth-child(5)::before
+{
 .sites-advant-list {
   padding-left: 9px;
 }
 .sites-advant {
   display: inline-block;
   width: 381px;
-
   font-size: 18px;
   line-height: 24px;
 }
