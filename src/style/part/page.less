@@ -31,6 +31,7 @@ h2 {
 }
 
 .btn {
+  display: inline-block;
   padding: 9px 46px;
   background: #00ab56;
   border: none;
@@ -57,6 +58,20 @@ h2 {
   border-radius: 5px;
   font-size: 24px;
   line-height: 36px;
+}
+.btn-sites {
+  padding: 14px 28px;
+  background: #ffffff;
+  border-radius: 6px;
+  color: #2b2a28;
+  font-size: 16px;
+  line-height: 24px;
+}
+.btn-sites:hover {
+  background: #e0e0e0;
+}
+.btn-know-more {
+
 }
 .main-head {
   min-height: 90px;
@@ -469,4 +484,111 @@ h2 {
 }
 .footer-link:hover  {
   color: #005129;
+}
+.sites-promo {
+  min-height: 552px;
+  width: 100%;
+  padding-top: 52px;
+  background: url("../img/office.jpg");
+  text-align: center;
+}
+.sites-promo-h {
+  color: #ffffff;
+  margin-bottom: 46px;
+}
+.sites-price {
+  display: inline-block;
+  min-height: 300px;
+  width: 300px;
+  margin-bottom: 14px;
+  background: #00bb5e;
+  color: #ffffff;
+}
+.sites-price:last-child {
+  margin-right: 0px;
+}
+.sites-price-wrap {
+  width: 300px;
+  display: inline-block;
+  margin-right: 25px;
+}
+.sites-price-wrap:last-child {
+  margin-right: 0px;
+}
+.interest-block {
+  padding: 42px 50px;
+  text-align: center;
+  vertical-align: top;
+  font-size: 0px;
+}
+.sites-interest_p {
+  display: inline-block;
+  width: 500px;
+  margin-bottom: 0px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2b2a28;
+}
+.sites-interest-list {
+  display: inline-block;
+  margin-top: 43px;
+  margin-bottom: 31px;
+  width: 100%;
+  vertical-align: top;
+  text-align: left;
+}
+.interest_item {
+  display: inline-block;
+  width: 432px;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 36px;
+  list-style-type: none;
+  background: #FFFFFF;
+  vertical-align: middle;
+}
+.interest_item::before {
+  content: "";
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 21px;
+  vertical-align: middle;
+}
+.interest_item:nth-child(1)::before
+{
+  .sprite( @settings);
+}
+.interest_item:nth-child(2)::before
+{
+  .sprite( @paint);
+}
+.interest_item:nth-child(3)::before
+{
+  .sprite( @server);
+}
+.interest_item:nth-child(4)::before
+{
+  .sprite( @rocket);
+}
+.interest_item:nth-child(5)::before
+{
+  .sprite( @table);
+}
+.sites-advant-list {
+  padding-left: 9px;
+}
+.sites-advant {
+  display: inline-block;
+  width: 381px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+.sites-slider {
+  min-height: 448px;
+  width: 100%;
+  background: #00bb5e;
 }
