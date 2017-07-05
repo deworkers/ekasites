@@ -98,6 +98,10 @@ h2 {
 
 .main-head {
     min-height: 90px;
+
+    a {
+      text-decoration: none;
+    }
 }
 
 
@@ -181,16 +185,22 @@ h2 {
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 30px;
+    height: 50px;
     list-style-type: none;
     background: #FFFFFF;
     vertical-align: middle;
 
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 25px;
+    }
+
     &::before {
         content: "";
-        display: inline-block;
+        display: table-cell;
         width: 50px;
         height: 50px;
-        margin-right: 26px;
         vertical-align: middle;
     }
 }
@@ -258,10 +268,73 @@ h2 {
 
 
 .main-slider {
-    height: 553px;
     background: #00a553;
+    padding: 60px 0;
+    
+    .swiper-pagination {
+
+    }
+
+    .swiper-button-next {
+      .sprite(@next);
+      background-size: auto;
+      right: -60px;
+    }
+    .swiper-button-prev {
+      .sprite(@prev);
+      background-size: auto;
+      left: -60px;
+    }
+
+    .swiper-pagination {
+      bottom: -40px;
+    }
+
+    .swiper-pagination-bullet {
+      background: #fff;
+      width: 15px;
+      margin-right: 10px;
+      height: 15px;
+    }
+
 }
 
+
+.main-slider-wrap {
+    overflow: hidden;
+}
+
+.main-slider-one {
+
+}
+
+.main-slider-left {
+  display: table-cell;
+  vertical-align: middle;
+  width: 520px;    
+}
+
+.main-slider-right {
+  display: table-cell;
+  vertical-align: middle;
+  width: 440px;
+  padding-left: 40px;
+}
+
+.main-slider__title {
+    font-size: 24px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.main-slider__descr {
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+}
 
 /*robot block image, paysystem, cost, advantages */
 .robot-block {
@@ -512,7 +585,8 @@ h2 {
 
 
 .main-form {
-    width: 100%;
+    margin: 0 auto;
+    width: 440px;
     text-align: center;
 }
 
@@ -521,29 +595,12 @@ h2 {
     margin: 11px auto;
     display: block;
     min-height: 40px;
-    width: 440px;
+    width: 100%;
     padding: 10px;
     border: 0px;
     font-size: 16px;
     font-weight: normal;
-
-    &::-webkit-input-placeholder {
-        font-size: 18px;
-        color:#bcb9b9;
-    }
-
-    &::-moz-placeholder {
-        font-size: 18px;
-        color:#bcb9b9;
-    }/* Firefox 19+ */
-
-    &:-moz-placeholder {
-        color:#bcb9b9;
-    }/* Firefox 18- */
-
-    &:-ms-input-placeholder {
-        color:#bcb9b9;
-    }
+    outline: none;
 }
 
 
@@ -554,7 +611,9 @@ h2 {
 
 .form_input-question {
     height: 91px;
-    font-size: 18px;
+    font-size: 16px;
+    font-family: @font;
+    outline: none;
 }
 
 
