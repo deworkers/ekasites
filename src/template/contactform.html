@@ -2,9 +2,13 @@
     <h2>
         Остались вопросы? Напишите нам
     </h2>
-    <form class="main-form" action="#" method="post">
-        <input class="form_input" type="text" name="name" value="" placeholder="Ваше имя">
-        <input class="form_input" type="text" name="phone" value="" placeholder="Телефон">
+    <form class="main-form" action="#" method="post" id="order">
+        <div class="form-line">
+        	<input class="form_input" type="text" name="name" value="" placeholder="Ваше имя">
+        </div>
+        <div class="form-line">
+        	<input class="form_input" type="text" name="phone" value="" placeholder="Телефон">
+        </div>
         <textarea class="form_input form_input-question" rows=3 name="question" value="" placeholder="Ваш вопрос"></textarea>
         <button class="btn form_send" type="submit">Отправить</button>
     </form>

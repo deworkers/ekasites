@@ -588,6 +588,16 @@ h2 {
     margin: 0 auto;
     width: 440px;
     text-align: center;
+
+    label.error {
+      color: red;
+      position: absolute;
+    }
+}
+
+
+.form-line {
+  position: relative;
 }
 
 
@@ -1005,4 +1015,95 @@ h2 {
   content: "";
   display: table;
   clear: both;
+}
+
+
+.pay-wrap {
+    
+}
+
+.pay-title {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.pay-text {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.pay-quantity {
+    margin-bottom: 30px;
+    table {
+      width: 100%;
+      border-bottom: 1px solid #ddd;
+      td {
+        padding: 5px;
+        border-top: 1px solid #ddd;
+      }
+      label {
+        width: 100%;
+        display: block;
+      }
+      input {
+        outline: none;
+      }
+    }
+}
+
+.pay-domen {
+  margin-bottom: 10px;
+}
+
+.pay-domen-title {
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.pay-domen-one {
+  padding-left: 120px;
+  position: relative;
+  margin-bottom: 20px;
+  input {
+    width: 100%;
+    height: 30px;
+  }
+  label {
+    position: absolute;
+    left: 0;
+    top: 5px;
+  }
+}
+
+.pay-email {
+    label {
+      margin-bottom: 10px;
+      display: block;
+      span {
+        display: block;
+        color: #adadad;
+      }
+    }
+    input {
+      width: 100%;
+        height: 30px;
+    }
+}
+
+.pay-button {
+  background: #00ab56;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 20px;
+  display: block;
+  margin: 30px auto 0;
+
 }

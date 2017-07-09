@@ -94,6 +94,27 @@ $(document).ready(function() {
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
     });
+
+    $("#order").validate({
+        rules:{
+            name:{
+                required: true
+            },
+            phone:{
+                required: true,
+                email:  true,
+            },
+        },
+        messages:{
+            name:{
+                required: "Это поле обязательно для заполнения",
+            },
+            phone:{
+                required: "Это поле обязательно для заполнения",
+            },
+       }
+});
+
     
     
 
