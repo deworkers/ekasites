@@ -95,6 +95,14 @@ $(document).ready(function() {
         prevButton: '.swiper-button-prev',
     });
 
+    var feedbacks = new Swiper('.slider-wrap', {
+        loop: true,
+        slidesPerView: 2,
+        spaceBetween: 30,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+    });
+
     $("#order").validate({
         rules:{
             name:{

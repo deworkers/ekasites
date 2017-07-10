@@ -299,8 +299,22 @@ h2 {
 
 }
 
+.sites-slider {
+  .swiper-button-next {
+      .sprite(@next);
+      background-size: auto;
+      right: -60px;
+    }
+    .swiper-button-prev {
+      .sprite(@prev);
+      background-size: auto;
+      left: -60px;
+    }
+}
 
-.main-slider-wrap {
+
+.main-slider-wrap,
+.slider-wrap {
     overflow: hidden;
 }
 
@@ -415,13 +429,14 @@ h2 {
     margin-right: 31px;
     margin-left: 7px;
     font-size: 18px;
+    position: relative;
 
     &::before {
         content: "";
         display: inline-block;
         position: absolute;
-        top: 116px;
-        left: 94px;
+        top: 0;
+        right: 0;
         .sprite( @shape-price);
     }
 }
@@ -592,6 +607,10 @@ h2 {
     label.error {
       color: red;
       position: absolute;
+      top: 12px;
+      right: 5px;
+      font-size: 12px;
+      text-align: right;
     }
 }
 
@@ -848,14 +867,11 @@ h2 {
 
 .slider-feedbacks {
     display: inline-block;
-    width: 440px;
-    margin-top: 55px;
-    margin-right: 20px;
-    margin-left: 20px;
     padding-right: 20px;
     padding-left: 20px;
     border-radius: 6px;
     background: #ffffff;
+    margin-top: 50px;
 }
 
 
