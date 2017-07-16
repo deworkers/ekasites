@@ -34,8 +34,9 @@ h2 {
 .wrap {
 	max-width: 1000px;
 	margin: 0 auto;
-    padding-right: 20px;
-    padding-left: 20px;
+  word-spacing: -0.35em;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 
@@ -457,14 +458,14 @@ h2 {
 
 
 .main-robot p {
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     margin-left: 10px;
     font-weight: bold;
 }
 
 
 .robot-paysystem {
-    margin: 31px auto;
+    margin: 15px auto;
     margin-bottom: 14px;
     padding-left: 1px;
     max-width: 380px;
@@ -558,7 +559,6 @@ h2 {
     display: inline-block;
     width: 248px;
     margin-right: 33px;
-    padding-top: 15px;
     list-style-type: none;
     font-size: 18px;
     line-height: 24px;
@@ -571,22 +571,20 @@ h2 {
 
 
 .advant-text {
-    display: inline-block;
+    display: table-cell;
+    vertical-align: middle;
     padding-left: 85px;
+    height: 78px;
 }
 
 
 .advant-checkbox {
     position: absolute;
     top:0px;
-    display: inline-block;
-    float: left;
+    display: block;
     height: 78px;
     width: 78px;
-    margin-top: 3px;
-    margin-right: 10px;
     .sprite( @checkbox);
-    vertical-align: middle;
 }
 
 
@@ -670,9 +668,9 @@ h2 {
 
 
 .sites-price-wrap {
-    width: 300px;
+    width: 31%;
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 3%;
 
     &:last-child {
         margin-right: 0px;
@@ -683,7 +681,7 @@ h2 {
 .sites-kinds {
     display: inline-block;
     min-height: 300px;
-    width: 300px;
+    width: 100%;
     margin-bottom: 14px;
     background: #00bb5e;
     color: #ffffff;
@@ -759,8 +757,7 @@ h2 {
 
 
 .sites-interest_p {
-    display: inline-block;
-    width: 500px;
+    display: block;
     margin-bottom: 0px;
     font-size: 24px;
     line-height: 36px;
@@ -777,26 +774,35 @@ h2 {
     width: 100%;
     vertical-align: top;
     text-align: left;
+    padding: 0;
 }
 
 
 .interest_item {
-    display: inline-block;
-    width: 432px;
-    margin-bottom: 24px;
-    font-size: 18px;
-    line-height: 36px;
+    width: 48%;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    height: 50px;
     list-style-type: none;
-    background: #FFFFFF;
     vertical-align: middle;
+    display: inline-block;
+    padding-right: 20px;
 
     &::before {
         content: "";
-        display: inline-block;
+        display: table-cell;
         width: 50px;
         height: 50px;
         margin-right: 21px;
         vertical-align: middle;
+    }
+
+    span {
+      display: table-cell;
+      padding-left: 20px;
+      line-height: 20px;
+      vertical-align: middle;
     }
 }
 
@@ -840,16 +846,16 @@ h2 {
 .sites-advant-list {
     margin-bottom: 35px;
     padding-top: 50px;
-    padding-left: 9px;
+    word-spacing: -0.35em;
 }
 
 
 .sites-advant {
     position: relative;
     display: inline-block;
-    width: 473px;
+    width: 50%;
+    height: 78px;
     margin-bottom: 65px;
-    padding-top: 20px;
     font-size: 18px;
     line-height: 24px;
     vertical-align: middle;
@@ -911,9 +917,12 @@ h2 {
 
 .feedback-text {
     min-height: 160px;
-    font-size: 16px;
-    line-height: 24px;
+    
     color: #2b2a28;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
 }
 
 
@@ -941,6 +950,7 @@ h2 {
     vertical-align: top;
     color: #ffffff;
     font-size: 0px;
+    overflow: hidden;
 }
 
 
@@ -1088,6 +1098,7 @@ h2 {
   input {
     width: 100%;
     height: 30px;
+    padding: 0 5px;
   }
   label {
     position: absolute;
@@ -1097,6 +1108,7 @@ h2 {
 }
 
 .pay-email {
+    margin-bottom: 20px;
     label {
       margin-bottom: 10px;
       display: block;
@@ -1107,7 +1119,8 @@ h2 {
     }
     input {
       width: 100%;
-        height: 30px;
+      height: 30px;
+      padding: 0 5px;
     }
 }
 
@@ -1122,4 +1135,184 @@ h2 {
   display: block;
   margin: 30px auto 0;
 
+}
+
+.seo-slider {
+  padding: 50px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 700;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 24px;
+  }
+
+  .swiper-button-next {
+      .sprite(@next-bl);
+      background-size: auto;
+      right: -60px;
+  }
+
+  .swiper-button-prev {
+      .sprite(@prev-bl);
+      background-size: auto;
+      left: -60px;
+  }
+}
+
+.seo-wrap {
+  overflow: hidden;
+  padding: 20px;
+
+  .slider-feedbacks {
+    box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+
+    padding-right: 340px;
+  }
+
+  .feedback-link {
+    color: #2b2a28;
+    margin-bottom: 10px;
+    font-size: 18px;
+    display: block;
+  }
+
+  .feedback-text {
+
+  }
+
+  .feedback-graph {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+  }
+
+}
+
+
+.seo {
+  background-image: url(/img/seo.jpg);
+  padding: 50px 0;
+  background-size: cover;
+}
+
+.seo-title {
+  text-align: center;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.seo-subtitle {
+  text-align: center;
+  color: #000;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.seo-cols {
+  word-spacing: -0.35em;
+}
+
+.seo-col {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  padding: 0 20px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.seo-interest-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.seo-interest-item {
+  margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 36px;
+    vertical-align: middle;
+    color: #000;
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+      padding-left: 25px;
+      line-height: 20px;
+    }
+
+    &::before {
+        content: "";
+        display: table-cell;
+        width: 50px;
+        height: 50px;
+        margin-right: 21px;
+        vertical-align: middle;
+    }
+}
+
+.icon-audit {
+  &:before {
+    .sprite(@audit);
+  }
+}
+
+.icon-seo {
+  &:before {
+    .sprite(@seo);
+  }
+}
+
+.icon-ui {
+  &:before {
+    .sprite(@ui);
+  }
+}
+
+.icon-direct {
+  &:before {
+    .sprite(@direct);
+  }
+}
+
+.pay-phone {
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input {
+    width: 100%;
+    height: 30px;
+    padding: 0 5px;
+  }
+}
+
+.eTimer {
+  display: block !important;
+  margin: 0 auto 20px;
+}
+
+.etTitle {
+  margin-bottom: 0 !important
+}
+
+.robot-oferta {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  color: #4d4d4d;
+  margin: 10px 0 10px 20px ;
 }
