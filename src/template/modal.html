@@ -1,5 +1,6 @@
 <div id="overlay">
 	<div class="modal" id="pay">
+		<div class="modal__close"></div>
 		<div class="pay-wrap">
 			<div class="pay-title">Оплата модуля</div>
 			<div class="pay-text">
@@ -9,17 +10,17 @@
 				<div class="pay-quantity">
 					<table>
 						<tr>
-							<td><input type="radio" id="select1" name="quantity" val="1"></td>
+							<td><input type="radio" id="select1" name="quantity" val="1" data-quant="1"></td>
 							<td><label for="select1">Установка на 1 домен</label></td>
 							<td>19 000 рублей</td>
 						</tr>
 						<tr>
-							<td><input type="radio" id="select2" name="quantity" val="2"></td>
+							<td><input type="radio" id="select2" name="quantity" val="2" data-quant="2"></td>
 							<td><label for="select2">Установка на 2 домен</label></td>
 							<td>25 000 рублей</td>
 						</tr>
 						<tr>
-							<td><input type="radio" id="select3" name="quantity" val="3"></td>
+							<td><input type="radio" id="select3" name="quantity" val="3" data-quant="3"></td>
 							<td><label for="select3">Установка на 3 домен</label></td>
 							<td>30 000 рублей</td>
 						</tr>
@@ -47,7 +48,7 @@
 					Ваш e-mail 
 					<span>на него прийдет ссылка для скачивания</span>
 					</label>
-					<input type="text" name="email">
+					<input type="text" name="cps_email">
 				</div>
 				<button type="submit" class="pay-button">Перейти к оплате</button>
 			</form>

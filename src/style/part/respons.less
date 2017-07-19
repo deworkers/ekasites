@@ -164,12 +164,80 @@
 		margin-right: 10px !important;
 	}
 
+	.main-icon {
+		img {
+			width: 100%;
+			left: 0;
+			margin-left: 0;
+		}
+	}
+
 }
 
 @media screen and (max-width: 768px) { // планшет горизонтально
+
+	.main-top {
+		background-image: none;
+		background-color: #00a553;
+	}
+
+	.main-head {
+
+	}
+
+	.main-top__title {
+		padding: 20px;
+		font-size: 18px;
+		line-height: 24px;
+	}
+
+	.main-icon__title {
+		padding: 30px 0;
+	}
+
+	.main-icon {
+		padding-top: 0;
+		width: 100%;
+		height: auto;
+
+		&:nth-child(1) {
+			.main-icon-img {
+				height: 215px;
+			}
+		}
+		&:nth-child(2) {
+			margin-top: -20px;
+			.main-icon-img {
+
+			}
+		}
+		&:nth-child(3) {
+			padding-top: 20px;
+			.main-icon-img {
+				height: 155px;
+			}
+		}
+
+	}
+
+	.main-icon__title {
+		border-left: none;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+	}
+
+	.main-nav {
+		margin-bottom: 20px;
+		display: table;
+		width: 100%;
+	}
+
 	.main-nav_item {
-		display: block;
-		margin-bottom: 10px;
+		display: table-cell;
+		text-align: center;
+		padding: 0 5px;
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 0px;
 		&:after {
 			display: none;
 		}
@@ -408,6 +476,7 @@
 	}
 
 	.sites-slider {
+		padding: 30px 20px;
 		.swiper-button-next {
 			display: none;
 		}

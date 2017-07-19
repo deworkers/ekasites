@@ -397,7 +397,7 @@ h2 {
     top: 107px;
     height: 371px;
     width: 100%;
-    background: url("../img/Robot.png");
+    background: url("../img/robot.png");
     background-repeat: no-repeat;
 }
 
@@ -893,6 +893,7 @@ h2 {
 
 .feedback-avatar img {
     border-radius: 50px;
+    width: 100%;
 }
 
 
@@ -1122,6 +1123,10 @@ h2 {
       height: 30px;
       padding: 0 5px;
     }
+    label.error {
+        color: red;
+        font-size: 11px;
+    }
 }
 
 .pay-button {
@@ -1350,8 +1355,8 @@ h2 {
   text-align: center;
   height: 375px;
   position: relative;
-  padding-top: 250px;
   text-decoration: none;
+
   &:first-child {
     .main-icon__title {
       border-left: none;
@@ -1359,28 +1364,14 @@ h2 {
   }
 }
 
-.main-icon__img {
-  position: absolute;
+
+.main-icon-img {
+  height: 265px;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
   z-index: 10;
 }
 
-.main-icon__img--sites {
-  bottom: 103px;
-  left: 50%;
-  margin-left: -165px;
-}
-
-.main-icon__img--robot {
-  bottom: 110px;
-  left: 50%;
-  margin-left: -65px;
-}
-
-.main-icon__img--seo {
-  bottom: 125px;
-  left: 50%;
-  margin-left: -130px;
-}
 
 .main-icon__title {
   color: #fff;
@@ -1393,4 +1384,21 @@ h2 {
   background: -webkit-linear-gradient(top, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 100%);
   background: linear-gradient(to bottom, rgba(255,255,255,0.4) 0%,rgba(255,255,255,0) 100%);
 
+}
+
+.modal__close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    &:before {
+        content: "+";
+        transform: rotate(45deg);
+        font-size: 40px;
+        position: absolute;
+        top: -6px;
+        left: 10px;
+    }
 }
