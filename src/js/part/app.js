@@ -146,6 +146,8 @@ $(document).ready(function() {
         etType: 0, etDate: "31.07.2017.0.0", etTitleText: "Осталось времени", etTitleSize: 17, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#020202", etPaddingTB: 5, etPaddingLR: 5, etBackground: "transparent", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Trebuchet MS", etNumberSize: 22, etNumberColor: "black", etNumberPaddingTB: 0, etNumberPaddingLR: 0, etNumberBackground: "transparent", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 0px 0px transparent"
     });
 
+    $('#sum').val($('.select:checked').val());
+
     $("#pay-form").validate({
         rules:{
             cps_email:{
@@ -153,7 +155,6 @@ $(document).ready(function() {
             },
             payment:{
                 required: true,
-                email:  true,
             },
         },
         messages:{
