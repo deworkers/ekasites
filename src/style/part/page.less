@@ -110,6 +110,7 @@ h2 {
     display: inline-block;
     margin-top: 23px;
     margin-right: 106px;
+    width: 235px;
 }
 
 
@@ -257,24 +258,23 @@ h2 {
     min-height: 502px;
     vertical-align: top;
     width: 59.2%;
+    overflow: hidden;
 }
 
 
-.about_image {
+/*.about_image {
     position: absolute;
     top: 0;
     right: 0;
     width: 566px;
-}
+}*/
 
 
 .main-slider {
     background: #00a553;
     padding: 60px 0;
     
-    .swiper-pagination {
-
-    }
+    
 
     .swiper-button-next {
       .sprite(@next);
@@ -310,6 +310,16 @@ h2 {
       .sprite(@prev);
       background-size: auto;
       left: -60px;
+    }
+    .swiper-pagination-sites {
+      bottom: -30px;
+    }
+
+    .swiper-pagination-bullet {
+      background: #fff;
+      width: 15px;
+      margin-right: 10px;
+      height: 15px;
     }
 }
 
@@ -995,7 +1005,9 @@ h2 {
     font-size: 24px;
     line-height: 24px;
     font-weight: bold;
-    color: #ffffff;
+    color: #ffffff !important;
+    text-decoration: none !important; 
+
 
     &::before {
         content: "";
@@ -1109,6 +1121,13 @@ h2 {
     position: absolute;
     left: 0;
     top: 5px;
+  }
+  label.error {
+        color: red;
+        font-size: 11px;
+        position: absolute;
+        left: 120px;
+        top: 34px;
   }
 }
 
@@ -1413,4 +1432,8 @@ h2 {
         top: -6px;
         left: 10px;
     }
+}
+
+.hidden {
+  display: none;
 }

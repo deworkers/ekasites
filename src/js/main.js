@@ -7,6 +7,7 @@
 //= ../plugin/jquery.validate.min.js
 //= ../plugin/timer.js
 
+
 /*
  * Custom
  */

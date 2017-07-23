@@ -7,7 +7,7 @@ $(document).ready(function() {
         return false;
     }
 
-    $('.j-scroll-to').click(function(event) {
+    $('.j-scroll-to').on('click',function(event) {
         event.preventDefault(); 
         var div = $(this).attr('href');
         var toPos = $(div).offset().top;
@@ -93,6 +93,7 @@ $(document).ready(function() {
         paginationClickable: true,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
+        autoplay: 5000
     });
 
     var feedbacks = new Swiper('.slider-wrap', {
@@ -101,6 +102,9 @@ $(document).ready(function() {
         spaceBetween: 30,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
+        pagination: '.swiper-pagination-sites',
+        paginationClickable: true,
+        autoplay: 5000,
         breakpoints: {
             768: {
                 slidesPerView: 1
@@ -114,11 +118,19 @@ $(document).ready(function() {
         spaceBetween: 30,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
+        autoplay: 5000,
         breakpoints: {
             768: {
                 slidesPerView: 1
             }
         }
+    });
+
+    var feedbacks = new Swiper('.consult-image-block', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: 21000
     });
 
     $("#order").validate({
@@ -128,7 +140,6 @@ $(document).ready(function() {
             },
             phone:{
                 required: true,
-                email:  true,
             },
         },
         messages:{
@@ -138,9 +149,25 @@ $(document).ready(function() {
             phone:{
                 required: "Это поле обязательно для заполнения",
             },
-       }
+        },
+        submitHandler: function() {
+            $('.contact-form').html('<h2>Ваше сообщение отправлено</h2><p>Наш менеджер свяжется с вами в бижайшее время</p>')
+        }
+
     });
-    
+
+    $("#order").submit(function() { //устанавливаем событие отправки для формы с id=form
+        var formData = $(this).serialize(); //собераем все данные из формы
+        $.ajax({
+            type: "POST", //Метод отправки
+            url: "/ajax/send.php", //путь до php фаила отправителя
+            data: formData
+        });
+    });
+
+
+
+       
 
     jQuery(".eTimer").eTimer({
         etType: 0, etDate: "31.07.2017.0.0", etTitleText: "Осталось времени", etTitleSize: 17, etShowSign: 1, etSep: ":", etFontFamily: "Trebuchet MS", etTextColor: "#020202", etPaddingTB: 5, etPaddingLR: 5, etBackground: "transparent", etBorderSize: 0, etBorderRadius: 2, etBorderColor: "white", etShadow: " 0px 0px 0px 0px #333333", etLastUnit: 4, etNumberFontFamily: "Trebuchet MS", etNumberSize: 22, etNumberColor: "black", etNumberPaddingTB: 0, etNumberPaddingLR: 0, etNumberBackground: "transparent", etNumberBorderSize: 0, etNumberBorderRadius: 5, etNumberBorderColor: "white", etNumberShadow: "inset 0px 0px 0px 0px transparent"
@@ -156,6 +183,15 @@ $(document).ready(function() {
             payment:{
                 required: true,
             },
+            domen1:{
+                required: true,
+            },
+            domen2:{
+                required: true,
+            },
+            domen3:{
+                required: true,
+            }
         },
         messages:{
             cps_email:{
@@ -164,8 +200,36 @@ $(document).ready(function() {
             payment:{
                 required: "Выберете способ оплаты",
             },
+            domen1:{
+                required: "Это поле обязательно для заполнения",
+            },
+            domen2:{
+                required: "Это поле обязательно для заполнения",
+            },
+            domen3:{
+                required: "Это поле обязательно для заполнения",
+            }
        }
     });
+
+
+$('.select').change(function(){
+    var idx = $(this).parents('tr').index();
+    if ( idx == 0 ) {
+        $($('.pay-domen-one')[1]).hide();
+        $($('.pay-domen-one')[2]).hide();
+    }
+    if ( idx == 1 ) {
+        $($('.pay-domen-one')[1]).show();
+        $($('.pay-domen-one')[2]).hide();
+    }
+    if ( idx ==  2 ) {
+        $($('.pay-domen-one')[1]).show();
+        $($('.pay-domen-one')[2]).show();
+    }
+
+        
+});
     
 
 });

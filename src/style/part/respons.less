@@ -1,4 +1,6 @@
 
+@import "sprite.less";
+
 @media screen and (max-width: 1280px) {
 	.main-slider {
 		padding: 60px 30px;
@@ -27,6 +29,9 @@
 	    }
 	    .swiper-button-prev {
 	      left: -20px;
+	    }
+	    .swiper-pagination-sites {
+	    	bottom: -15px;
 	    }
 	}
 }
@@ -590,4 +595,122 @@
 
 @media screen and (max-width: 480px) { // телефон
 	
+}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (min-resolution: 144dpi) { 
+
+       	.about-list_item {
+       		position: relative;
+       	}
+
+       	.interest_item,
+       	.seo-interest-item {
+       		position: relative;
+       	}
+
+       	.icon-retina(@name) {
+       		&:before {
+       			.sprite(@name);
+				transform: scale(0.5);
+				position: absolute;
+				top: -25px;
+				left: -25px;
+       		}
+
+       		span {
+       			padding-left: 60px;
+       			height: 50px;
+       		}
+       	}
+
+
+
+       	.icon-24h {
+       		.icon-retina(@24h-2x) 
+
+       	}
+
+       	.icon-clients {
+       		.icon-retina(@clients-2x) 
+
+       	}
+
+       	.icon-install {
+       		.icon-retina(@install-2x) 
+       	}
+
+       	.icon-pay {
+       		.icon-retina(@pay-2x) 
+       	}
+
+       	.icon-thumbup {
+       		.icon-retina(@thumbup-2x) 
+       	}
+
+       	.icon-settings {
+       		.icon-retina(@settings-2x) 
+       	}
+
+       	.icon-rocket {
+       		.icon-retina(@rocket-2x) 
+       	}
+
+       	.icon-paint {
+       		.icon-retina(@paint-2x) 
+       	}
+
+       	.icon-table {
+       		.icon-retina(@table-2x) 
+       	}
+
+       	.icon-server {
+       		.icon-retina(@server-2x) 
+       	}
+
+       	.icon-seo {
+       		.icon-retina(@seo-2x) 
+       	}
+
+       	.icon-audit {
+       		.icon-retina(@audit-2x) 
+       	}
+
+       	.icon-ui {
+       		.icon-retina(@ui-2x) 
+       	}
+
+       	.icon-direct {
+       		.icon-retina(@direct-2x) 
+       	}
+
+		.site-icon(@name) {
+			&:before {
+				.sprite(@name);
+				transform: scale(0.5);
+				top: -20px;
+    			left: -110px;
+			}
+		}
+
+		.price-header {
+			position: relative;
+		}
+
+		.card {
+			.site-icon(@buscard-2x);
+		}
+
+		.catalog {
+			.site-icon(@calendar-2x);
+			&:before {
+				left: -95px;
+			}
+		}
+
+		.shop {
+			.site-icon(@laptop-2x);
+		}
+
 }
