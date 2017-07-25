@@ -104,7 +104,7 @@ $(document).ready(function() {
         prevButton: '.swiper-button-prev',
         pagination: '.swiper-pagination-sites',
         paginationClickable: true,
-        autoplay: 5000,
+        autoplay: 8000,
         breakpoints: {
             768: {
                 slidesPerView: 1
