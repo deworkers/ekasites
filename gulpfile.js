@@ -130,11 +130,11 @@ gulp.task('sprite:build', function() {
     var spriteData = 
         gulp.src('src/img/sprite/*.*') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
-                imgName: 'sprite.png',
+                imgName: 'sprites.png',
                 cssName: 'sprite.less',
                 cssFormat: 'less',
                 algorithm: 'binary-tree',
-                imgPath: '../img/sprite.png'
+                imgPath: '../img/sprites.png'
             }));
 
     spriteData.img.pipe(gulp.dest('build/img/')); // путь, куда сохраняем картинку

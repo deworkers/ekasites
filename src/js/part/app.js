@@ -88,7 +88,6 @@ $(document).ready(function() {
     var about = new Swiper('.main-slider-wrap', {
         loop: true,
         slidesPerView: 1,
-        hashnav: true,
         pagination: '.swiper-pagination',
         paginationClickable: true,
         nextButton: '.swiper-button-next',
@@ -112,7 +111,7 @@ $(document).ready(function() {
         }
     });
 
-    var feedbacks = new Swiper('.seo-wrap', {
+    var seoFedbacks = new Swiper('.seo-wrap', {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 30,
@@ -126,7 +125,7 @@ $(document).ready(function() {
         }
     });
 
-    var feedbacks = new Swiper('.consult-image-block', {
+    var consultSlider = new Swiper('.consult-image-block', {
         loop: true,
         slidesPerView: 1,
         spaceBetween: 30,
